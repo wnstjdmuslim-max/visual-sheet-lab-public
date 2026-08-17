@@ -55,3 +55,11 @@ export function filterBenchmarkEntries<T extends BenchmarkFilterEntry>(entries: 
     (bias === "ALL COLOR BIAS" || entry.analysis.bias === bias),
   );
 }
+
+export function toggleFavoriteKey(keys: string[], key: string) {
+  return keys.includes(key) ? keys.filter(value => value !== key) : [...keys, key];
+}
+
+export function filterFavoriteEntries<T extends { item: { sourcePage: string } }>(entries: T[], favorites: string[]) {
+  return entries.filter(entry => favorites.includes(entry.item.sourcePage));
+}

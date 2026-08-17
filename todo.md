@@ -94,3 +94,17 @@
 - [x] MOOD 필터와 COLOR BIAS 필터의 파생 옵션·조합·초기화·empty-state 순수 함수 테스트 추가
 - [x] 데스크톱 필터 선택과 결과 개수·카드 목록 변경 검증
 - [x] 모바일 필터 선택·초기화와 결과 상태 검증
+
+## Film benchmark favorites
+
+- [x] 영화 카드별 즐겨찾기 하트 버튼 추가
+- [x] 즐겨찾기 상태를 localStorage에 저장하고 새로고침 후 유지
+- [x] 전체 보기·즐겨찾기 모아보기 탭 추가
+- [x] 즐겨찾기 모드와 MOOD·COLOR BIAS 필터 조합 지원
+- [x] 즐겨찾기 추가·해제·모아보기·empty-state 테스트 및 반응형 검증
+
+## Favorite behavior evidence
+
+- [x] 즐겨찾기 localStorage 저장·복원과 FAVORITES 모드 필터링 순수 함수 테스트 추가
+- [x] FAVORITES empty-state와 MOOD·COLOR BIAS 조합 상태 검증
+- [x] 데스크톱·모바일 즐겨찾기 하트와 모아보기 렌더링 검증
