@@ -479,5 +479,2405 @@ export const filmGrabSeed = [
         "mean_warmth": 0.01846915849673203
       }
     }
+  },
+  {
+    "filmTitle": "As In Heaven",
+    "sourcePage": "https://film-grab.com/2026/08/09/as-in-heaven/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/As_In_Heaven_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/As_In_Heaven_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/As_In_Heaven_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/As_In_Heaven_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/As_In_Heaven_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/As_In_Heaven_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/As_In_Heaven_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/As_In_Heaven_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/As_In_Heaven_09.jpg"
+    ],
+    "palette": [
+      "#404040",
+      "#A08060",
+      "#402020",
+      "#202020",
+      "#402000",
+      "#C0C0C0",
+      "#604040",
+      "#002020"
+    ],
+    "analysis": {
+      "palette": [
+        "#404040",
+        "#A08060",
+        "#402020",
+        "#202020",
+        "#402000",
+        "#C0C0C0",
+        "#604040",
+        "#002020"
+      ],
+      "exposure": "Balanced / natural",
+      "saturation": "Moderate",
+      "contrast": "Soft / controlled",
+      "temperature": "Warm",
+      "bias": "Amber / red bias",
+      "mood": "Cinematic / restrained",
+      "raw_metrics": {
+        "mean_luma": 0.3617761617476851,
+        "mean_saturation": 0.3757772188756561,
+        "mean_warmth": 0.1270990774782135
+      }
+    }
+  },
+  {
+    "filmTitle": "The Lady Vanishes",
+    "sourcePage": "https://film-grab.com/2026/08/11/the-lady-vanishes/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lady_Vanishes_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lady_Vanishes_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lady_Vanishes_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lady_Vanishes_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lady_Vanishes_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lady_Vanishes_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lady_Vanishes_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lady_Vanishes_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lady_Vanishes_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#404040",
+      "#606060",
+      "#808080",
+      "#000000",
+      "#A0A0A0",
+      "#C0C0C0",
+      "#E0E0E0"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#404040",
+        "#606060",
+        "#808080",
+        "#000000",
+        "#A0A0A0",
+        "#C0C0C0",
+        "#E0E0E0"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Muted",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.28207592933006537,
+        "mean_saturation": 0.0,
+        "mean_warmth": 0.0
+      }
+    }
+  },
+  {
+    "filmTitle": "State of Siege",
+    "sourcePage": "https://film-grab.com/2026/08/15/state-of-siege/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/State_of_Siege_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/State_of_Siege_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/State_of_Siege_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/State_of_Siege_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/State_of_Siege_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/State_of_Siege_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/State_of_Siege_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/State_of_Siege_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/State_of_Siege_09.jpg"
+    ],
+    "palette": [
+      "#206060",
+      "#80A0A0",
+      "#204040",
+      "#408080",
+      "#202020",
+      "#002020",
+      "#60A0A0",
+      "#608080"
+    ],
+    "analysis": {
+      "palette": [
+        "#206060",
+        "#80A0A0",
+        "#204040",
+        "#408080",
+        "#202020",
+        "#002020",
+        "#60A0A0",
+        "#608080"
+      ],
+      "exposure": "Balanced / natural",
+      "saturation": "Moderate",
+      "contrast": "Soft / controlled",
+      "temperature": "Cool",
+      "bias": "Blue / cyan bias",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.34721396097154134,
+        "mean_saturation": 0.4682487991541832,
+        "mean_warmth": -0.1438551028050109
+      }
+    }
+  },
+  {
+    "filmTitle": "The Lost Boys",
+    "sourcePage": "https://film-grab.com/2026/08/14/the-lost-boys/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lost_Boys__01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lost_Boys__02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lost_Boys__03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lost_Boys__04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lost_Boys__05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lost_Boys__06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lost_Boys__07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lost_Boys__08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Lost_Boys__09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#200000",
+      "#402000",
+      "#202020",
+      "#202000",
+      "#402020",
+      "#602000",
+      "#400000"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#200000",
+        "#402000",
+        "#202020",
+        "#202000",
+        "#402020",
+        "#602000",
+        "#400000"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Rich / vivid",
+      "contrast": "High density",
+      "temperature": "Warm",
+      "bias": "Amber / red bias",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.13341164028458607,
+        "mean_saturation": 0.6217923122662582,
+        "mean_warmth": 0.10308329929193899
+      }
+    }
+  },
+  {
+    "filmTitle": "Them!",
+    "sourcePage": "https://film-grab.com/2026/08/02/them/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Them_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Them_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Them_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Them_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Them_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Them_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Them_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Them_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Them_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#808080",
+      "#000000",
+      "#404040",
+      "#A0A0A0",
+      "#606060",
+      "#C0C0C0",
+      "#E0E0E0"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#808080",
+        "#000000",
+        "#404040",
+        "#A0A0A0",
+        "#606060",
+        "#C0C0C0",
+        "#E0E0E0"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Muted",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.3137582550381264,
+        "mean_saturation": 0.0,
+        "mean_warmth": 0.0
+      }
+    }
+  },
+  {
+    "filmTitle": "The Call",
+    "sourcePage": "https://film-grab.com/2026/07/31/the-call/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Call_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Call_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Call_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Call_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Call_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Call_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Call_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Call_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Call_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#204040",
+      "#002020",
+      "#000020",
+      "#404040",
+      "#202040",
+      "#406080"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#204040",
+        "#002020",
+        "#000020",
+        "#404040",
+        "#202040",
+        "#406080"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Cool",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.1806326420377179,
+        "mean_saturation": 0.46684177057578263,
+        "mean_warmth": -0.08609281386165578
+      }
+    }
+  },
+  {
+    "filmTitle": "A Generation",
+    "sourcePage": "https://film-grab.com/2026/08/12/a-generation/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Generation_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Generation_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Generation_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Generation_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Generation_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Generation_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Generation_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Generation_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Generation_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#404040",
+      "#606060",
+      "#808080",
+      "#A0A0A0",
+      "#C0C0C0",
+      "#000000"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#404040",
+        "#606060",
+        "#808080",
+        "#A0A0A0",
+        "#C0C0C0",
+        "#000000"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Muted",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.15193482775054468,
+        "mean_saturation": 0.0,
+        "mean_warmth": 0.0
+      }
+    }
+  },
+  {
+    "filmTitle": "Battle Beyond the Stars",
+    "sourcePage": "https://film-grab.com/2026/08/04/battle-beyond-the-stars/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/BBTS_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/BBTS_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/BBTS_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/BBTS_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/BBTS_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/BBTS_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/BBTS_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/BBTS_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/BBTS_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#200000",
+      "#202020",
+      "#806060",
+      "#402020",
+      "#606060",
+      "#002020",
+      "#604040"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#200000",
+        "#202020",
+        "#806060",
+        "#402020",
+        "#606060",
+        "#002020",
+        "#604040"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Rich / vivid",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.1656980058551198,
+        "mean_saturation": 0.4959612654016328,
+        "mean_warmth": 0.008357162309368194
+      }
+    }
+  },
+  {
+    "filmTitle": "Compañeros",
+    "sourcePage": "https://film-grab.com/2026/07/26/companeros/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Companeros_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Companeros_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Companeros_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Companeros_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Companeros_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Companeros_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Companeros_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Companeros_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Companeros_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#404040",
+      "#606060",
+      "#404020",
+      "#604040",
+      "#C0A0A0",
+      "#808080",
+      "#402020"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#404040",
+        "#606060",
+        "#404020",
+        "#604040",
+        "#C0A0A0",
+        "#808080",
+        "#402020"
+      ],
+      "exposure": "Balanced / natural",
+      "saturation": "Moderate",
+      "contrast": "Soft / controlled",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Cinematic / restrained",
+      "raw_metrics": {
+        "mean_luma": 0.37957336720452073,
+        "mean_saturation": 0.22646700264271968,
+        "mean_warmth": 0.04201814406318083
+      }
+    }
+  },
+  {
+    "filmTitle": "The Novelist’s Film",
+    "sourcePage": "https://film-grab.com/2026/08/01/the-novelists-film/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Novelist's_Film_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Novelist's_Film_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Novelist's_Film_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Novelist's_Film_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Novelist's_Film_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Novelist's_Film_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Novelist's_Film_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Novelist's_Film_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Novelist's_Film_09.jpg"
+    ],
+    "palette": [
+      "#808080",
+      "#606060",
+      "#202020",
+      "#404040",
+      "#A0A0A0",
+      "#E0E0E0",
+      "#FFFFFF",
+      "#C0C0C0"
+    ],
+    "analysis": {
+      "palette": [
+        "#808080",
+        "#606060",
+        "#202020",
+        "#404040",
+        "#A0A0A0",
+        "#E0E0E0",
+        "#FFFFFF",
+        "#C0C0C0"
+      ],
+      "exposure": "Balanced / natural",
+      "saturation": "Muted",
+      "contrast": "Soft / controlled",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Cinematic / restrained",
+      "raw_metrics": {
+        "mean_luma": 0.4725643382352941,
+        "mean_saturation": 0.0,
+        "mean_warmth": 0.0
+      }
+    }
+  },
+  {
+    "filmTitle": "How To Blow Up A Pipeline",
+    "sourcePage": "https://film-grab.com/2026/08/10/how-to-blow-up-a-pipeline/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/How_To_Blow_Up_a_Pipeline_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/How_To_Blow_Up_a_Pipeline_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/How_To_Blow_Up_a_Pipeline_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/How_To_Blow_Up_a_Pipeline_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/How_To_Blow_Up_a_Pipeline_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/How_To_Blow_Up_a_Pipeline_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/How_To_Blow_Up_a_Pipeline_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/How_To_Blow_Up_a_Pipeline_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/How_To_Blow_Up_a_Pipeline_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#402020",
+      "#606040",
+      "#404020",
+      "#808060",
+      "#404040",
+      "#406040"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#402020",
+        "#606040",
+        "#404020",
+        "#808060",
+        "#404040",
+        "#406040"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.2607165543300653,
+        "mean_saturation": 0.3638746625900277,
+        "mean_warmth": 0.02649782135076253
+      }
+    }
+  },
+  {
+    "filmTitle": "Kingdom of Heaven",
+    "sourcePage": "https://film-grab.com/2026/07/29/kingdom-of-heaven/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kingdom_of_Heaven_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kingdom_of_Heaven_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kingdom_of_Heaven_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kingdom_of_Heaven_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kingdom_of_Heaven_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kingdom_of_Heaven_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kingdom_of_Heaven_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kingdom_of_Heaven_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kingdom_of_Heaven_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#402020",
+      "#200000",
+      "#002020",
+      "#004060",
+      "#202000",
+      "#2080A0"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#402020",
+        "#200000",
+        "#002020",
+        "#004060",
+        "#202000",
+        "#2080A0"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.18100572686887254,
+        "mean_saturation": 0.4788915716112982,
+        "mean_warmth": -0.053790934776688455
+      }
+    }
+  },
+  {
+    "filmTitle": "I Do Not Care If We Go Down In History As Barbarians",
+    "sourcePage": "https://film-grab.com/2026/08/08/i-do-not-care-if-we-go-down-in-history-as-barbarians/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Barbarians_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Barbarians_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Barbarians_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Barbarians_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Barbarians_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Barbarians_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Barbarians_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Barbarians_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Barbarians_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#002020",
+      "#204040",
+      "#202000",
+      "#404040",
+      "#404020",
+      "#406040"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#002020",
+        "#204040",
+        "#202000",
+        "#404040",
+        "#404020",
+        "#406040"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.19023583963099128,
+        "mean_saturation": 0.42647407699236733,
+        "mean_warmth": 0.006283190359477124
+      }
+    }
+  },
+  {
+    "filmTitle": "Highlander II: The Quickening",
+    "sourcePage": "https://film-grab.com/2026/07/28/highlander-ii-the-quickening/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Highlander_2_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Highlander_2_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Highlander_2_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Highlander_2_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Highlander_2_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Highlander_2_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Highlander_2_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Highlander_2_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Highlander_2_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#200000",
+      "#402020",
+      "#202000",
+      "#806040",
+      "#C06040",
+      "#402000"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#200000",
+        "#402020",
+        "#202000",
+        "#806040",
+        "#C06040",
+        "#402000"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Warm",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.19740004493464053,
+        "mean_saturation": 0.3896834996650091,
+        "mean_warmth": 0.0905058551198257
+      }
+    }
+  },
+  {
+    "filmTitle": "‘Round Midnight",
+    "sourcePage": "https://film-grab.com/2026/08/16/round-midnight/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Round_Midnight_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Round_Midnight_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Round_Midnight_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Round_Midnight_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Round_Midnight_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Round_Midnight_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Round_Midnight_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Round_Midnight_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Round_Midnight_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202000",
+      "#202020",
+      "#200000",
+      "#404020",
+      "#404040",
+      "#402020",
+      "#402000"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202000",
+        "#202020",
+        "#200000",
+        "#404020",
+        "#404040",
+        "#402020",
+        "#402000"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.143951604711329,
+        "mean_saturation": 0.4285470830661106,
+        "mean_warmth": 0.04795411220043573
+      }
+    }
+  },
+  {
+    "filmTitle": "The Tale of Princess Kaguya",
+    "sourcePage": "https://film-grab.com/2026/08/13/the-tale-of-princess-kaguya/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Princess_Kaguya_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Princess_Kaguya_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Princess_Kaguya_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Princess_Kaguya_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Princess_Kaguya_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Princess_Kaguya_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Princess_Kaguya_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Princess_Kaguya_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Princess_Kaguya_09.jpg"
+    ],
+    "palette": [
+      "#C0C0C0",
+      "#E0E0E0",
+      "#A0A0A0",
+      "#808080",
+      "#E0C0C0",
+      "#C0E0C0",
+      "#606060",
+      "#A0C0A0"
+    ],
+    "analysis": {
+      "palette": [
+        "#C0C0C0",
+        "#E0E0E0",
+        "#A0A0A0",
+        "#808080",
+        "#E0C0C0",
+        "#C0E0C0",
+        "#606060",
+        "#A0C0A0"
+      ],
+      "exposure": "Bright / lifted",
+      "saturation": "Muted",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Cinematic / restrained",
+      "raw_metrics": {
+        "mean_luma": 0.6932124628948801,
+        "mean_saturation": 0.10229232569483446,
+        "mean_warmth": 0.013485498366013073
+      }
+    }
+  },
+  {
+    "filmTitle": "A Day At The Races",
+    "sourcePage": "https://film-grab.com/2026/07/30/a-day-at-the-races/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Day_At_The_Races_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Day_At_The_Races_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Day_At_The_Races_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Day_At_The_Races_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Day_At_The_Races_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Day_At_The_Races_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Day_At_The_Races_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Day_At_The_Races_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Day_At_The_Races_09.jpg"
+    ],
+    "palette": [
+      "#404040",
+      "#606060",
+      "#808080",
+      "#202020",
+      "#A0A0A0",
+      "#C0C0C0",
+      "#000000",
+      "#E0E0E0"
+    ],
+    "analysis": {
+      "palette": [
+        "#404040",
+        "#606060",
+        "#808080",
+        "#202020",
+        "#A0A0A0",
+        "#C0C0C0",
+        "#000000",
+        "#E0E0E0"
+      ],
+      "exposure": "Balanced / natural",
+      "saturation": "Muted",
+      "contrast": "Soft / controlled",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Cinematic / restrained",
+      "raw_metrics": {
+        "mean_luma": 0.3711039624183006,
+        "mean_saturation": 0.0,
+        "mean_warmth": 0.0
+      }
+    }
+  },
+  {
+    "filmTitle": "Benediction",
+    "sourcePage": "https://film-grab.com/2026/08/07/benediction/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Benediction_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Benediction_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Benediction_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Benediction_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Benediction_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Benediction_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Benediction_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Benediction_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Benediction_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#202000",
+      "#200000",
+      "#404040",
+      "#402020",
+      "#E0E0E0",
+      "#604020"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#202000",
+        "#200000",
+        "#404040",
+        "#402020",
+        "#E0E0E0",
+        "#604020"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.24016620829929192,
+        "mean_saturation": 0.3434075151250696,
+        "mean_warmth": 0.04366574754901961
+      }
+    }
+  },
+  {
+    "filmTitle": "Our Father, The Devil",
+    "sourcePage": "https://film-grab.com/2026/07/12/our-father-the-devil/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Our_Father_The_Devil_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Our_Father_The_Devil_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Our_Father_The_Devil_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Our_Father_The_Devil_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Our_Father_The_Devil_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Our_Father_The_Devil_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Our_Father_The_Devil_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Our_Father_The_Devil_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Our_Father_The_Devil_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#E0E0E0",
+      "#404040",
+      "#402020",
+      "#606040",
+      "#000000",
+      "#606060",
+      "#200000"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#E0E0E0",
+        "#404040",
+        "#402020",
+        "#606040",
+        "#000000",
+        "#606060",
+        "#200000"
+      ],
+      "exposure": "Balanced / natural",
+      "saturation": "Moderate",
+      "contrast": "Soft / controlled",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Cinematic / restrained",
+      "raw_metrics": {
+        "mean_luma": 0.3764628653492647,
+        "mean_saturation": 0.3074662144239901,
+        "mean_warmth": 0.0541781556372549
+      }
+    }
+  },
+  {
+    "filmTitle": "Heroic Trio 2: Executioners",
+    "sourcePage": "https://film-grab.com/2026/07/08/heroic-trio-2-executioners/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Executioners_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Executioners_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Executioners_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Executioners_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Executioners_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Executioners_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Executioners_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Executioners_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Executioners_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#204040",
+      "#002020",
+      "#000000",
+      "#402020",
+      "#404020",
+      "#002000",
+      "#204060"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#204040",
+        "#002020",
+        "#000000",
+        "#402020",
+        "#404020",
+        "#002000",
+        "#204060"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Rich / vivid",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.21061675628063725,
+        "mean_saturation": 0.49151703182399664,
+        "mean_warmth": -0.015640744144880172
+      }
+    }
+  },
+  {
+    "filmTitle": "The Reckless Moment",
+    "sourcePage": "https://film-grab.com/2026/07/25/the-reckless-moment/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Reckless_Moment_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Reckless_Moment_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Reckless_Moment_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Reckless_Moment_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Reckless_Moment_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Reckless_Moment_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Reckless_Moment_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Reckless_Moment_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Reckless_Moment_09.jpg"
+    ],
+    "palette": [
+      "#404040",
+      "#202020",
+      "#606060",
+      "#808080",
+      "#000000",
+      "#A0A0A0",
+      "#C0C0C0",
+      "#E0E0E0"
+    ],
+    "analysis": {
+      "palette": [
+        "#404040",
+        "#202020",
+        "#606060",
+        "#808080",
+        "#000000",
+        "#A0A0A0",
+        "#C0C0C0",
+        "#E0E0E0"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Muted",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.31085707720588235,
+        "mean_saturation": 0.0,
+        "mean_warmth": 0.0
+      }
+    }
+  },
+  {
+    "filmTitle": "Matchstick Men",
+    "sourcePage": "https://film-grab.com/2026/07/02/matchstick-men/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Matchstick_Men_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Matchstick_Men_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Matchstick_Men_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Matchstick_Men_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Matchstick_Men_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Matchstick_Men_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Matchstick_Men_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Matchstick_Men_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Matchstick_Men_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#404040",
+      "#E0FFFF",
+      "#202000",
+      "#404020",
+      "#608080",
+      "#002020"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#404040",
+        "#E0FFFF",
+        "#202000",
+        "#404020",
+        "#608080",
+        "#002020"
+      ],
+      "exposure": "Balanced / natural",
+      "saturation": "Moderate",
+      "contrast": "Soft / controlled",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Cinematic / restrained",
+      "raw_metrics": {
+        "mean_luma": 0.40925637212350213,
+        "mean_saturation": 0.301620069810484,
+        "mean_warmth": -0.015493515114379087
+      }
+    }
+  },
+  {
+    "filmTitle": "Maggie Moore(s)",
+    "sourcePage": "https://film-grab.com/2026/07/04/maggie-moores/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Maggie_Moores_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Maggie_Moores_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Maggie_Moores_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Maggie_Moores_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Maggie_Moores_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Maggie_Moores_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Maggie_Moores_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Maggie_Moores_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Maggie_Moores_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#404020",
+      "#202000",
+      "#000000",
+      "#402020",
+      "#404040",
+      "#200000",
+      "#606040"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#404020",
+        "#202000",
+        "#000000",
+        "#402020",
+        "#404040",
+        "#200000",
+        "#606040"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.16715594005310455,
+        "mean_saturation": 0.4380010712046518,
+        "mean_warmth": 0.07907220179738562
+      }
+    }
+  },
+  {
+    "filmTitle": "The Host",
+    "sourcePage": "https://film-grab.com/2026/07/10/the-host/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Host_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Host_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Host_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Host_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Host_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Host_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Host_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Host_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Host_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#204040",
+      "#406060",
+      "#404040",
+      "#002020",
+      "#404060",
+      "#606060"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#204040",
+        "#406060",
+        "#404040",
+        "#002020",
+        "#404060",
+        "#606060"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.24583906547862203,
+        "mean_saturation": 0.33365689236309326,
+        "mean_warmth": -0.01750536151960784
+      }
+    }
+  },
+  {
+    "filmTitle": "Water For Elephants",
+    "sourcePage": "https://film-grab.com/2026/07/08/water-for-elephants/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Water_For_Elephants_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Water_For_Elephants_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Water_For_Elephants_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Water_For_Elephants_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Water_For_Elephants_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Water_For_Elephants_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Water_For_Elephants_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Water_For_Elephants_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Water_For_Elephants_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#002020",
+      "#200000",
+      "#202000",
+      "#404040",
+      "#000020",
+      "#404020"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#002020",
+        "#200000",
+        "#202000",
+        "#404040",
+        "#000020",
+        "#404020"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.1809484669458061,
+        "mean_saturation": 0.4242178435733232,
+        "mean_warmth": 0.02627229711328976
+      }
+    }
+  },
+  {
+    "filmTitle": "The Little Mermaid",
+    "sourcePage": "https://film-grab.com/2026/07/06/the-little-mermaid/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Little_Mermaid_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Little_Mermaid_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Little_Mermaid_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Little_Mermaid_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Little_Mermaid_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Little_Mermaid_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Little_Mermaid_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Little_Mermaid_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Little_Mermaid_09.jpg"
+    ],
+    "palette": [
+      "#002020",
+      "#000000",
+      "#000020",
+      "#204040",
+      "#202020",
+      "#404040",
+      "#002040",
+      "#406060"
+    ],
+    "analysis": {
+      "palette": [
+        "#002020",
+        "#000000",
+        "#000020",
+        "#204040",
+        "#202020",
+        "#404040",
+        "#002040",
+        "#406060"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Rich / vivid",
+      "contrast": "High density",
+      "temperature": "Cool",
+      "bias": "Blue / cyan bias",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.2723061041326253,
+        "mean_saturation": 0.520314486752837,
+        "mean_warmth": -0.12271497140522875
+      }
+    }
+  },
+  {
+    "filmTitle": "Last Action Hero",
+    "sourcePage": "https://film-grab.com/2026/07/16/last-action-hero/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Action_Hero_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Action_Hero_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Action_Hero_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Action_Hero_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Action_Hero_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Action_Hero_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Action_Hero_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Action_Hero_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Action_Hero_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#200000",
+      "#202020",
+      "#402020",
+      "#404040",
+      "#604040",
+      "#606060",
+      "#202000"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#200000",
+        "#202020",
+        "#402020",
+        "#404040",
+        "#604040",
+        "#606060",
+        "#202000"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.1846696015454793,
+        "mean_saturation": 0.4131349762988366,
+        "mean_warmth": 0.014791836873638343
+      }
+    }
+  },
+  {
+    "filmTitle": "Rosalie",
+    "sourcePage": "https://film-grab.com/2026/07/15/rosalie/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Rosalie_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Rosalie_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Rosalie_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Rosalie_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Rosalie_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Rosalie_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Rosalie_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Rosalie_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Rosalie_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#200000",
+      "#808080",
+      "#404040",
+      "#204020",
+      "#404020",
+      "#606060"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#200000",
+        "#808080",
+        "#404040",
+        "#204020",
+        "#404020",
+        "#606060"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.29601764025054467,
+        "mean_saturation": 0.35425692238971307,
+        "mean_warmth": 0.0237234477124183
+      }
+    }
+  },
+  {
+    "filmTitle": "Kiss of Death",
+    "sourcePage": "https://film-grab.com/2026/07/05/kiss-of-death/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kiss_of_Death_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kiss_of_Death_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kiss_of_Death_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kiss_of_Death_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kiss_of_Death_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kiss_of_Death_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kiss_of_Death_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kiss_of_Death_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Kiss_of_Death_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#404040",
+      "#606060",
+      "#808080",
+      "#A0A0A0",
+      "#C0C0C0",
+      "#000000"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#404040",
+        "#606060",
+        "#808080",
+        "#A0A0A0",
+        "#C0C0C0",
+        "#000000"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Muted",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.18765744144880175,
+        "mean_saturation": 0.0,
+        "mean_warmth": 0.0
+      }
+    }
+  },
+  {
+    "filmTitle": "King of New York",
+    "sourcePage": "https://film-grab.com/2026/07/14/king-of-new-york/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_King_Of_New_York_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_King_Of_New_York_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_King_Of_New_York_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_King_Of_New_York_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_King_Of_New_York_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_King_Of_New_York_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_King_Of_New_York_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_King_Of_New_York_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_King_Of_New_York_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#200000",
+      "#404040",
+      "#202040",
+      "#402020",
+      "#204040",
+      "#606060"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#200000",
+        "#404040",
+        "#202040",
+        "#402020",
+        "#204040",
+        "#606060"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.14066769327001633,
+        "mean_saturation": 0.4473129066916131,
+        "mean_warmth": -0.0037066823257080606
+      }
+    }
+  },
+  {
+    "filmTitle": "Master Gardener",
+    "sourcePage": "https://film-grab.com/2026/07/03/master-gardener/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Master_Gardener_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Master_Gardener_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Master_Gardener_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Master_Gardener_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Master_Gardener_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Master_Gardener_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Master_Gardener_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Master_Gardener_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Master_Gardener_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#404040",
+      "#404020",
+      "#606060",
+      "#202000",
+      "#606040",
+      "#204020"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#404040",
+        "#404020",
+        "#606060",
+        "#202000",
+        "#606040",
+        "#204020"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.18489392463235296,
+        "mean_saturation": 0.31473399021777343,
+        "mean_warmth": 0.023949822984749458
+      }
+    }
+  },
+  {
+    "filmTitle": "The Big 4",
+    "sourcePage": "https://film-grab.com/2026/07/20/the-big-4/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Big_Four_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Big_Four_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Big_Four_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Big_Four_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Big_Four_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Big_Four_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Big_Four_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Big_Four_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Big_Four_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#404040",
+      "#000000",
+      "#606060",
+      "#204040",
+      "#002020",
+      "#202040",
+      "#808080"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#404040",
+        "#000000",
+        "#606060",
+        "#204040",
+        "#002020",
+        "#202040",
+        "#808080"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.26878930240672655,
+        "mean_saturation": 0.30432612970343653,
+        "mean_warmth": -0.03104702818627451
+      }
+    }
+  },
+  {
+    "filmTitle": "Your Name.",
+    "sourcePage": "https://film-grab.com/2026/07/13/your-name/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Your_Name_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Your_Name_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Your_Name_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Your_Name_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Your_Name_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Your_Name_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Your_Name_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Your_Name_09.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Your_Name_10.jpg"
+    ],
+    "palette": [
+      "#FFFFFF",
+      "#4060A0",
+      "#404040",
+      "#E0E0E0",
+      "#6080A0",
+      "#FFE0FF",
+      "#202040",
+      "#E0E0FF"
+    ],
+    "analysis": {
+      "palette": [
+        "#FFFFFF",
+        "#4060A0",
+        "#404040",
+        "#E0E0E0",
+        "#6080A0",
+        "#FFE0FF",
+        "#202040",
+        "#E0E0FF"
+      ],
+      "exposure": "Balanced / natural",
+      "saturation": "Moderate",
+      "contrast": "Soft / controlled",
+      "temperature": "Cool",
+      "bias": "Blue / cyan bias",
+      "mood": "Cinematic / restrained",
+      "raw_metrics": {
+        "mean_luma": 0.5793760572406046,
+        "mean_saturation": 0.26911241495508825,
+        "mean_warmth": -0.10051359953703703
+      }
+    }
+  },
+  {
+    "filmTitle": "El Cid",
+    "sourcePage": "https://film-grab.com/2026/07/23/el-cid/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/El_Cid_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/El_Cid_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/El_Cid_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/El_Cid_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/El_Cid_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/El_Cid_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/El_Cid_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/El_Cid_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/El_Cid_09.jpg"
+    ],
+    "palette": [
+      "#404040",
+      "#202020",
+      "#000000",
+      "#A08080",
+      "#604040",
+      "#806060",
+      "#606060",
+      "#402020"
+    ],
+    "analysis": {
+      "palette": [
+        "#404040",
+        "#202020",
+        "#000000",
+        "#A08080",
+        "#604040",
+        "#806060",
+        "#606060",
+        "#402020"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.2853145700571895,
+        "mean_saturation": 0.3013075308011569,
+        "mean_warmth": 0.0710597086056645
+      }
+    }
+  },
+  {
+    "filmTitle": "The Decameron",
+    "sourcePage": "https://film-grab.com/2026/07/21/the-decameron/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Decameron_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Decameron_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Decameron_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Decameron_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Decameron_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Decameron_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Decameron_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Decameron_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Decameron_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#404040",
+      "#402020",
+      "#202040",
+      "#200000",
+      "#000020",
+      "#606060"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#404040",
+        "#402020",
+        "#202040",
+        "#200000",
+        "#000020",
+        "#606060"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.26520455005787036,
+        "mean_saturation": 0.3796473628391316,
+        "mean_warmth": -0.03078065427559913
+      }
+    }
+  },
+  {
+    "filmTitle": "The Last of Sheila",
+    "sourcePage": "https://film-grab.com/2026/07/19/the-last-of-sheila/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Of_Sheila_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Of_Sheila_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Of_Sheila_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Of_Sheila_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Of_Sheila_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Of_Sheila_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Of_Sheila_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Of_Sheila_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Last_Of_Sheila_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#404040",
+      "#202020",
+      "#606060",
+      "#200000",
+      "#402020",
+      "#604040",
+      "#808080"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#404040",
+        "#202020",
+        "#606060",
+        "#200000",
+        "#402020",
+        "#604040",
+        "#808080"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.22232480392156864,
+        "mean_saturation": 0.29886155673672626,
+        "mean_warmth": 0.015022467320261437
+      }
+    }
+  },
+  {
+    "filmTitle": "My Sole Desire",
+    "sourcePage": "https://film-grab.com/2026/07/18/my-sole-desire/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/My_Sole_Desire_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/My_Sole_Desire_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/My_Sole_Desire_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/My_Sole_Desire_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/My_Sole_Desire_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/My_Sole_Desire_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/My_Sole_Desire_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/My_Sole_Desire_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/My_Sole_Desire_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#000020",
+      "#002020",
+      "#402020",
+      "#202020",
+      "#002040",
+      "#200000",
+      "#204040"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#000020",
+        "#002020",
+        "#402020",
+        "#202020",
+        "#002040",
+        "#200000",
+        "#204040"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Rich / vivid",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.1328852662037037,
+        "mean_saturation": 0.6310175892011426,
+        "mean_warmth": -0.06411356209150326
+      }
+    }
+  },
+  {
+    "filmTitle": "Tommy",
+    "sourcePage": "https://film-grab.com/2026/07/01/tommy/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Tommy__01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Tommy__02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Tommy__03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Tommy__04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Tommy__05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Tommy__06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Tommy__07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Tommy__08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Tommy__09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#404040",
+      "#202020",
+      "#404020",
+      "#606040",
+      "#606060",
+      "#808080",
+      "#808060"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#404040",
+        "#202020",
+        "#404020",
+        "#606040",
+        "#606060",
+        "#808080",
+        "#808060"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.24186226707175923,
+        "mean_saturation": 0.35071330680234997,
+        "mean_warmth": 0.027628421160130714
+      }
+    }
+  },
+  {
+    "filmTitle": "Anon",
+    "sourcePage": "https://film-grab.com/2026/06/30/anon/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Anon_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Anon_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Anon_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Anon_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Anon_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Anon_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Anon_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Anon_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Anon_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#606060",
+      "#404040",
+      "#000020",
+      "#202040",
+      "#002020",
+      "#808080"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#606060",
+        "#404040",
+        "#000020",
+        "#202040",
+        "#002020",
+        "#808080"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.17585782781862747,
+        "mean_saturation": 0.26770757880025126,
+        "mean_warmth": -0.02035845588235294
+      }
+    }
+  },
+  {
+    "filmTitle": "The Mountain (1956)",
+    "sourcePage": "https://film-grab.com/2026/07/11/the-mountain-1956/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Mountain_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Mountain_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Mountain_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Mountain_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Mountain_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Mountain_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Mountain_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Mountain_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Mountain_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#204060",
+      "#404040",
+      "#000000",
+      "#202040",
+      "#002040",
+      "#604040",
+      "#404020"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#204060",
+        "#404040",
+        "#000000",
+        "#202040",
+        "#002040",
+        "#604040",
+        "#404020"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.267451577222903,
+        "mean_saturation": 0.39520124887484287,
+        "mean_warmth": -0.03792764501633987
+      }
+    }
+  },
+  {
+    "filmTitle": "The Dark Mirror",
+    "sourcePage": "https://film-grab.com/2026/06/27/the-dark-mirror/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Dark_Mirror_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Dark_Mirror_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Dark_Mirror_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Dark_Mirror_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Dark_Mirror_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Dark_Mirror_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Dark_Mirror_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Dark_Mirror_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Dark_Mirror_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#404040",
+      "#606060",
+      "#808080",
+      "#A0A0A0",
+      "#C0C0C0",
+      "#000000"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#404040",
+        "#606060",
+        "#808080",
+        "#A0A0A0",
+        "#C0C0C0",
+        "#000000"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Muted",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.18449712350217864,
+        "mean_saturation": 0.0,
+        "mean_warmth": 0.0
+      }
+    }
+  },
+  {
+    "filmTitle": "Never Look Away",
+    "sourcePage": "https://film-grab.com/2026/06/15/never-look-away/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Never_Look_Away_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Never_Look_Away_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Never_Look_Away_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Never_Look_Away_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Never_Look_Away_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Never_Look_Away_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Never_Look_Away_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Never_Look_Away_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Never_Look_Away_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#002020",
+      "#808080",
+      "#404040",
+      "#606060",
+      "#608060",
+      "#404020"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#002020",
+        "#808080",
+        "#404040",
+        "#606060",
+        "#608060",
+        "#404020"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.19096736264297387,
+        "mean_saturation": 0.4572509895765524,
+        "mean_warmth": -0.005440665849673201
+      }
+    }
+  },
+  {
+    "filmTitle": "Once A Thief",
+    "sourcePage": "https://film-grab.com/2026/06/02/once-a-thief/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Once_A_Thief_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Once_A_Thief_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Once_A_Thief_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Once_A_Thief_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Once_A_Thief_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Once_A_Thief_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Once_A_Thief_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Once_A_Thief_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Once_A_Thief_09.jpg"
+    ],
+    "palette": [
+      "#404040",
+      "#202020",
+      "#404020",
+      "#808080",
+      "#606060",
+      "#000000",
+      "#A0A0A0",
+      "#C0C0C0"
+    ],
+    "analysis": {
+      "palette": [
+        "#404040",
+        "#202020",
+        "#404020",
+        "#808080",
+        "#606060",
+        "#000000",
+        "#A0A0A0",
+        "#C0C0C0"
+      ],
+      "exposure": "Balanced / natural",
+      "saturation": "Moderate",
+      "contrast": "Soft / controlled",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Cinematic / restrained",
+      "raw_metrics": {
+        "mean_luma": 0.3781022700503812,
+        "mean_saturation": 0.23235344809049666,
+        "mean_warmth": 0.021870744825708062
+      }
+    }
+  },
+  {
+    "filmTitle": "The Goldfinch",
+    "sourcePage": "https://film-grab.com/2026/06/19/the-goldfinch/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Goldfinch_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Goldfinch_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Goldfinch_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Goldfinch_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Goldfinch_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Goldfinch_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Goldfinch_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Goldfinch_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/The_Goldfinch_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#202000",
+      "#404040",
+      "#402020",
+      "#404020",
+      "#002020",
+      "#200000"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#202000",
+        "#404040",
+        "#402020",
+        "#404020",
+        "#002020",
+        "#200000"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.17234924947235838,
+        "mean_saturation": 0.3173156195006852,
+        "mean_warmth": 0.028231804874727668
+      }
+    }
+  },
+  {
+    "filmTitle": "Black Panther: Wakanda Forever",
+    "sourcePage": "https://film-grab.com/2026/06/26/black-panther-wakanda-forever/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Black_Panther_Wakanda_Forever_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Black_Panther_Wakanda_Forever_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Black_Panther_Wakanda_Forever_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Black_Panther_Wakanda_Forever_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Black_Panther_Wakanda_Forever_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Black_Panther_Wakanda_Forever_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Black_Panther_Wakanda_Forever_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Black_Panther_Wakanda_Forever_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Black_Panther_Wakanda_Forever_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#002020",
+      "#806040",
+      "#204040",
+      "#202000",
+      "#402020",
+      "#808080"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#002020",
+        "#806040",
+        "#204040",
+        "#202000",
+        "#402020",
+        "#808080"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.29296691270084424,
+        "mean_saturation": 0.40049050048688994,
+        "mean_warmth": 0.013091043709150327
+      }
+    }
+  },
+  {
+    "filmTitle": "Outland",
+    "sourcePage": "https://film-grab.com/2026/06/09/outland/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Outland_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Outland_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Outland_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Outland_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Outland_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Outland_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Outland_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Outland_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Outland_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#606060",
+      "#404040",
+      "#808080",
+      "#200000",
+      "#806060",
+      "#402020"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#606060",
+        "#404040",
+        "#808080",
+        "#200000",
+        "#806060",
+        "#402020"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.2149579716435185,
+        "mean_saturation": 0.3685526102876138,
+        "mean_warmth": 0.032949516612200434
+      }
+    }
+  },
+  {
+    "filmTitle": "Corsage",
+    "sourcePage": "https://film-grab.com/2026/06/17/corsage/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Corsage_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Corsage_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Corsage_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Corsage_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Corsage_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Corsage_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Corsage_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Corsage_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Corsage_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#406040",
+      "#204040",
+      "#404040",
+      "#200000",
+      "#002020",
+      "#202000"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#406040",
+        "#204040",
+        "#404040",
+        "#200000",
+        "#002020",
+        "#202000"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.19549210920479304,
+        "mean_saturation": 0.4510934166981011,
+        "mean_warmth": -0.019934640522875816
+      }
+    }
+  },
+  {
+    "filmTitle": "In Time",
+    "sourcePage": "https://film-grab.com/2026/06/22/in-time/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/In_Time_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/In_Time_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/In_Time_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/In_Time_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/In_Time_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/In_Time_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/In_Time_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/In_Time_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/In_Time_09.jpg"
+    ],
+    "palette": [
+      "#000000",
+      "#202020",
+      "#002000",
+      "#404040",
+      "#404020",
+      "#200000",
+      "#604040",
+      "#202000"
+    ],
+    "analysis": {
+      "palette": [
+        "#000000",
+        "#202020",
+        "#002000",
+        "#404040",
+        "#404020",
+        "#200000",
+        "#604040",
+        "#202000"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.20347247719226577,
+        "mean_saturation": 0.40070519195568266,
+        "mean_warmth": 0.02681610838779956
+      }
+    }
+  },
+  {
+    "filmTitle": "A Man Escaped",
+    "sourcePage": "https://film-grab.com/2026/06/18/a-man-escaped/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Man_Escaped_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Man_Escaped_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Man_Escaped_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Man_Escaped_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Man_Escaped_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Man_Escaped_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Man_Escaped_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Man_Escaped_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/A_Man_Escaped_09.jpg"
+    ],
+    "palette": [
+      "#202020",
+      "#000000",
+      "#606060",
+      "#404040",
+      "#808080",
+      "#A0A0A0",
+      "#C0C0C0",
+      "#E0E0E0"
+    ],
+    "analysis": {
+      "palette": [
+        "#202020",
+        "#000000",
+        "#606060",
+        "#404040",
+        "#808080",
+        "#A0A0A0",
+        "#C0C0C0",
+        "#E0E0E0"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Muted",
+      "contrast": "High density",
+      "temperature": "Neutral",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.22926028050108935,
+        "mean_saturation": 0.0,
+        "mean_warmth": 0.0
+      }
+    }
+  },
+  {
+    "filmTitle": "Bad Luck Banging or Loony Porn",
+    "sourcePage": "https://film-grab.com/2026/05/30/bad-luck-banging-or-loony-porn/",
+    "imageUrls": [
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Bad_Luck_Banging_01.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Bad_Luck_Banging_02.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Bad_Luck_Banging_03.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Bad_Luck_Banging_04.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Bad_Luck_Banging_05.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Bad_Luck_Banging_06.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Bad_Luck_Banging_07.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Bad_Luck_Banging_08.jpg",
+      "https://film-grab.com/wp-content/uploads/photo-gallery/Bad_Luck_Banging_09.jpg"
+    ],
+    "palette": [
+      "#404040",
+      "#202020",
+      "#606040",
+      "#402020",
+      "#000000",
+      "#404020",
+      "#808060",
+      "#A08060"
+    ],
+    "analysis": {
+      "palette": [
+        "#404040",
+        "#202020",
+        "#606040",
+        "#402020",
+        "#000000",
+        "#404020",
+        "#808060",
+        "#A08060"
+      ],
+      "exposure": "Low-key / underexposed",
+      "saturation": "Moderate",
+      "contrast": "High density",
+      "temperature": "Warm",
+      "bias": "Balanced chroma",
+      "mood": "Nocturnal / introspective",
+      "raw_metrics": {
+        "mean_luma": 0.29168216043709155,
+        "mean_saturation": 0.3664189113017241,
+        "mean_warmth": 0.09029394744008715
+      }
+    }
   }
 ] as const;
