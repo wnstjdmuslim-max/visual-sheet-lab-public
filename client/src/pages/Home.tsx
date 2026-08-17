@@ -1,33 +1,101 @@
-import { useAuth } from "@/_core/hooks/useAuth";
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import { useMemo, useRef, useState } from "react";
+import { Download, GripVertical, ImagePlus, Library, Palette, Sparkles, Trash2, Upload, WandSparkles, X, Copy, Check } from "lucide-react";
+import { toast } from "sonner";
+import { isSupportedImageType, makeLookName, validateReferenceCount } from "@shared/sheetValidation";
+import { buildCharacterPrompt, deleteProjectItems, filterLibraryByProject, readLibrary, triggerPngDownload, writeLibrary } from "@shared/sheetRules";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Workflow, Frontend Best Practices, Design Guide and Common Pitfalls
- */
+type RefImage = { id: string; file: File; url: string; name: string };
+type Analysis = { mood: string; exposure: string; saturation: string; contrast: string; temperature: string; bias: string; palette: string[] };
+type SavedItem = { id: string; kind: "color" | "character"; title: string; project: string; createdAt: string; detail: string };
+
+const emptyAnalysis: Analysis = { mood: "Awaiting analysis", exposure: "—", saturation: "—", contrast: "—", temperature: "—", bias: "—", palette: [] };
+const optionLabels = ["shoes", "back", "hands", "lenses", "mannequin", "variation"] as const;
+const optionText: Record<(typeof optionLabels)[number], string> = { shoes: "Shoes clearly visible", back: "Back silhouette", hands: "Hand details", lenses: "Lens variation", mannequin: "Anti-mannequin posture", variation: "Natural variation" };
+
+function clamp(n: number, min: number, max: number) { return Math.min(max, Math.max(min, n)); }
+function rgbToHex(r: number, g: number, b: number) { return `#${[r, g, b].map(v => v.toString(16).padStart(2, "0")).join("").toUpperCase()}`; }
+function analyzeImages(images: RefImage[]): Promise<Analysis> {
+  return new Promise(resolve => {
+    if (!images.length) return resolve(emptyAnalysis);
+    const canvas = document.createElement("canvas"); const ctx = canvas.getContext("2d");
+    const buckets = new Map<string, number>(); let total = 0; let sumLuma = 0; let sumSat = 0; let sumWarm = 0;
+    let loaded = 0;
+    images.forEach(item => {
+      const img = new Image();
+      img.onload = () => {
+        canvas.width = 64; canvas.height = 64;
+        ctx?.drawImage(img, 0, 0, 64, 64);
+        const data = ctx?.getImageData(0, 0, 64, 64).data;
+        if (data) {
+          for (let i = 0; i < data.length; i += 16) {
+            const r=data[i], g=data[i+1], b=data[i+2];
+            const key=rgbToHex(clamp(Math.round(r/32)*32,0,255),clamp(Math.round(g/32)*32,0,255),clamp(Math.round(b/32)*32,0,255));
+            buckets.set(key,(buckets.get(key)??0)+1);
+            const max=Math.max(r,g,b), min=Math.min(r,g,b);
+            sumLuma += (0.2126*r+0.7152*g+0.0722*b)/255; sumSat += max ? (max-min)/max : 0; sumWarm += (r-b)/255; total++;
+          }
+        }
+        loaded++;
+        if (loaded===images.length) {
+          const sorted=Array.from(buckets.entries()).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([hex])=>hex);
+          const l=sumLuma/Math.max(total,1), s=sumSat/Math.max(total,1), w=sumWarm/Math.max(total,1);
+          resolve({ palette: sorted, exposure: l<.32?"Low-key / underexposed":l>.68?"Bright / lifted":"Balanced / natural", saturation:s<.2?"Muted":s>.48?"Rich / vivid":"Moderate", contrast:l<.32||l>.68?"High density":"Soft / controlled", temperature:w>.08?"Warm":w<-.08?"Cool":"Neutral", bias:w>.1?"Amber / red bias":w<-.1?"Blue / cyan bias":"Balanced chroma", mood:l<.35?"Nocturnal / introspective":s>.45?"Energetic / saturated":"Cinematic / restrained" });
+        }
+      };
+      img.src=item.url;
+    });
+  });
+}
+
+function makeDemoReferences(): RefImage[] {
+  const palettes = [["#17191d","#9b6247","#d8b895"],["#10252b","#547b79","#d8c7a2"],["#211b20","#874d58","#c69a78"],["#252521","#77755f","#d5c8ad"],["#111a1c","#526d72","#b5a281"],["#261d19","#a45e3f","#e1c09b"]];
+  return palettes.map((colors, index) => { const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420"><rect width="640" height="420" fill="${colors[0]}"/><circle cx="${180+index*48}" cy="190" r="150" fill="${colors[1]}" opacity=".76"/><path d="M0 320 Q 210 ${230+index*12} 640 300 L640 420 L0 420Z" fill="${colors[2]}" opacity=".8"/><rect x="40" y="42" width="180" height="4" fill="#f0e5d4" opacity=".7"/></svg>`; return { id:`demo-${index}`, file:new File([svg],`demo-reference-${index+1}.svg`,{type:"image/svg+xml"}), url:`data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`, name:`demo-reference-${index+1}.svg` }; });
+}
+
+function buildPrompt(fields: Record<string,string>, platform: string, strength: string, checks: Record<string, boolean>) {
+  const value = (key: string, fallback: string) => fields[key]?.trim() || fallback;
+  const locks = optionLabels.filter(k => checks[k]).map(k => `- ${optionText[k]}`).join("\n") || "- preserve natural continuity and human imperfection";
+  const core = `Create a cinematic character continuity sheet for ${platform}.\n\nCharacter description: ${value("description", "a grounded cinematic protagonist with a distinctive but believable face")}\nPeriod / Country: ${value("period", "infer naturally")}\nRole / Background: ${value("role", "infer naturally")}\nEmotion / Personality: ${value("emotion", "quietly observant, emotionally restrained")}\nBody / Posture: ${value("body", "natural weight imbalance and relaxed posture")}\nWardrobe: ${value("wardrobe", "coherent wardrobe inferred from the character")}`;
+  const structure = `\n\nBoard structure:\n1. Identity zone — front full-body, left profile, right profile, clear back full-body.\n2. Human zone — mid-length shots, subtle emotions, natural interaction poses.\n3. Production continuity zone — face texture close-up, eye/nose/lips, hands, wardrobe texture, shoes and accessories.\n\nVisual direction: ${strength} cinematic continuity, natural spherical lenses, practical lighting, muted grey-beige palette, low-key exposure, tactile skin texture, visible pores, subtle asymmetry.\n\nLocks:\n${locks}\n\nAvoid: plastic skin, beauty retouching, mannequin posture, fashion editorial lighting, hard rim light, HDR, concept art, game character sheet, porcelain skin, perfect symmetry.`;
+  const full = `${core}${structure}`;
+  const compact = `${core}. Cinematic character continuity board, front/profile/back full-body plus close-up detail zones, natural practical light, realistic skin texture, consistent wardrobe, ${strength} look. ${locks.replaceAll("- ", "")}`;
+  const negative = "plastic skin, waxy skin, airbrushed skin, beauty filter, glamour retouching, mannequin pose, rigid symmetry, fashion editorial, hard rim light, heavy HDR, concept art, game art, white seamless background";
+  return { full, compact, negative };
+}
+
+async function createBoard(images: RefImage[], count: number, fit: string, title: string, analysis: Analysis) {
+  const canvas=document.createElement("canvas"); canvas.width=1600; canvas.height=900; const ctx=canvas.getContext("2d"); if(!ctx) return;
+  ctx.fillStyle="#11110f"; ctx.fillRect(0,0,1600,900); const cols=count===6?3:count===9?3:4, rows=Math.ceil(count/cols), gap=18, top=108; const cellW=(1600-gap*(cols+1))/cols, cellH=(900-top-gap*(rows+1))/rows;
+  const loaded=await Promise.all(images.slice(0,count).map(item=>new Promise<HTMLImageElement>(resolve=>{const im=new Image(); im.onload=()=>resolve(im); im.src=item.url;})));
+  loaded.forEach((im,i)=>{const x=gap+(i%cols)*(cellW+gap), y=top+gap+Math.floor(i/cols)*(cellH+gap); ctx.save();ctx.beginPath();ctx.rect(x,y,cellW,cellH);ctx.clip();const ratio=fit==="crop"?Math.max(cellW/im.width,cellH/im.height):Math.min(cellW/im.width,cellH/im.height);const dw=im.width*ratio,dh=im.height*ratio;ctx.drawImage(im,x+(cellW-dw)/2,y+(cellH-dh)/2,dw,dh);ctx.restore();});
+  ctx.fillStyle="#d3c8b2";ctx.font="600 26px Arial";ctx.fillText(title||"FILM LOOK PROFILE",gap,48);ctx.fillStyle="#8e8575";ctx.font="12px Arial";ctx.fillText("VISUAL SHEET LAB · COLOR / LIGHT / TEXTURE / EXPOSURE",gap,72);ctx.textAlign="right";ctx.fillText(`${analysis.mood.toUpperCase()} · ${analysis.temperature.toUpperCase()} · 1600×900`,1590,72);ctx.textAlign="left";ctx.fillStyle="#8e8575";ctx.font="11px Arial";ctx.fillText("Generated by Visual Sheet Lab · private workspace",gap,884);
+  triggerPngDownload(canvas,document,title);
+}
+
 export default function Home() {
-  // The useAuth hook provides authentication state.
-  // To implement login/logout, call logout(), or start login from an event
-  // handler: onClick={() => startLogin()} (imported from "@/const"). Never call
-  // startLogin() during render (no href={startLogin()}) — it mints a one-time
-  // nonce cookie and must run only at the moment of navigation.
-  let { user, loading, error, isAuthenticated, logout } = useAuth();
-
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
-  return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
-    </div>
-  );
+  const [tab,setTab]=useState<"color"|"character">("color"); const [projectName,setProjectName]=useState("Untitled Project"); const [images,setImages]=useState<RefImage[]>([]); const [analysis,setAnalysis]=useState<Analysis>(emptyAnalysis); const [busy,setBusy]=useState(false); const [count,setCount]=useState(9); const [fit,setFit]=useState("crop"); const [lookName,setLookName]=useState(""); const inputRef=useRef<HTMLInputElement>(null);
+  const [platform,setPlatform]=useState("Universal"); const [strength,setStrength]=useState("Strong"); const [mode,setMode]=useState<"full"|"compact"|"negative">("full"); const [copied,setCopied]=useState(false); const [fields,setFields]=useState({description:"",period:"",role:"",emotion:"",body:"",wardrobe:""}); const [checks,setChecks]=useState<Record<string,boolean>>({shoes:true,back:true,hands:true,lenses:true,mannequin:true,variation:true});
+  const [library,setLibrary]=useState<SavedItem[]>(()=>readLibrary<SavedItem>(localStorage,"visual-sheet-library"));
+  const [libraryProjectFilter,setLibraryProjectFilter]=useState("ALL PROJECTS");
+  const projects=useMemo(()=>Array.from(new Set(library.map(item=>item.project||"Untitled Project"))),[library]);
+  const visibleLibrary=useMemo(()=>filterLibraryByProject(library,libraryProjectFilter),[library,libraryProjectFilter]);
+  const prompt=useMemo(()=>buildCharacterPrompt(fields,platform,strength,checks),[fields,platform,strength,checks]);
+  const addFiles=(files:FileList|null)=>{if(!files)return;const valid=Array.from(files).filter(f=>isSupportedImageType(f.type));if(valid.length!==files.length)toast.error("JPG와 PNG만 업로드할 수 있습니다.");const additions=valid.map((file,i)=>({id:`${file.name}-${file.lastModified}-${i}`,file,url:URL.createObjectURL(file),name:file.name}));const next=[...images,...additions];if(next.length>12)toast.info("최대 12장까지만 사용할 수 있습니다.");setImages(next.slice(0,12));setAnalysis(emptyAnalysis)};
+  const loadDemo=()=>{setImages(makeDemoReferences());setAnalysis(emptyAnalysis);setLookName("");toast.info("대표 레퍼런스 6장을 불러왔습니다. ANALYZE COLOR를 눌러보세요.")};
+  const regenerateLookName=()=>{if(analysis.mood==="Awaiting analysis"){toast.error("먼저 색감 분석을 실행하세요.");return}setLookName(makeLookName(analysis.mood,analysis.temperature));toast.success("룩 이름을 새로 만들었습니다.")};
+  const analyze=async()=>{const validation=validateReferenceCount(images.length);if(validation){toast.error(`색감 분석에는 6~12장의 레퍼런스가 필요합니다. 현재 ${images.length}장입니다.`);return}setBusy(true);await new Promise(r=>setTimeout(r,350));const result=await analyzeImages(images);setAnalysis(result);if(!lookName)setLookName(makeLookName(result.mood,result.temperature));setBusy(false);toast.success("색감 분석이 완료되었습니다.")};
+  const save=(kind:"color"|"character")=>{const title=kind==="color"?(lookName||"Untitled Look"):(fields.description.slice(0,34)||"Untitled Character");const next=[{id:crypto.randomUUID(),kind,title,project:projectName||"Untitled Project",createdAt:new Date().toISOString(),detail:kind==="color"?analysis.mood:platform},...library];setLibrary(next);writeLibrary(localStorage,"visual-sheet-library",next);toast.success("라이브러리에 저장했습니다.")};
+  const copyPrompt=async()=>{await navigator.clipboard.writeText(prompt[mode]);setCopied(true);setTimeout(()=>setCopied(false),1400);toast.success("프롬프트를 복사했습니다.")};
+  return <div className="min-h-screen bg-[#0c0d0c] text-[#e7e2d8] selection:bg-[#b9794c]/40">
+    <header className="sticky top-0 z-20 border-b border-white/10 bg-[#0c0d0c]/90 backdrop-blur-xl"><div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4"><div className="flex items-center gap-3"><div className="flex h-9 w-9 items-center justify-center border border-[#b9794c]/70 bg-[#171412] text-[#d69566]"><Palette size={17}/></div><div><div className="text-[11px] font-semibold tracking-[.35em] text-[#d69566]">VISUAL SHEET LAB</div><div className="text-[10px] uppercase tracking-[.2em] text-[#827c70]">Private image direction tool</div></div></div><div className="flex items-center gap-2 text-xs text-[#8d887d]"><Library size={14}/><span>{library.length} saved sheets</span></div></div></header>
+    <main className="mx-auto max-w-[1440px] px-6 py-10"><div className="mb-6 max-w-sm"><label className="field-label">PROJECT NAME<input value={projectName} onChange={e=>setProjectName(e.target.value)} className="field" placeholder="예: winter short film"/></label></div><section className="mb-9 max-w-3xl"><p className="mb-4 text-[11px] font-semibold tracking-[.42em] text-[#bd724b]">AI VISUAL WORKBENCH / 001</p><h1 className="font-serif text-4xl leading-tight tracking-tight text-[#f1ece2] md:text-6xl">Build a visual language<br/><span className="text-[#bd724b]">before the first frame.</span></h1><p className="mt-5 max-w-2xl text-sm leading-7 text-[#938e84]">레퍼런스에서 색감과 인물의 연속성을 추출하고, 실제 이미지 제작에 바로 사용할 수 있는 룩 보드와 캐릭터 프롬프트를 한 화면에서 정리합니다.</p></section>
+      <div className="mb-8 grid grid-cols-3 border border-white/10 bg-[#141513]"><button onClick={()=>setTab("color")} className={`py-4 text-xs font-semibold tracking-[.18em] transition ${tab==="color"?"bg-[#282119] text-[#e0a378]":"text-[#77736b] hover:bg-white/[.03]"}`}>COLOR SHEET</button><button onClick={()=>setTab("character")} className={`border-x border-white/10 py-4 text-xs font-semibold tracking-[.18em] transition ${tab==="character"?"bg-[#282119] text-[#e0a378]":"text-[#77736b] hover:bg-white/[.03]"}`}>CHARACTER SHEET</button><button onClick={()=>document.getElementById("library")?.scrollIntoView({behavior:"smooth"})} className="py-4 text-xs font-semibold tracking-[.18em] text-[#77736b] hover:bg-white/[.03]">LIBRARY <span className="ml-1 text-[#bd724b]">{library.length}</span></button></div>
+      {tab==="color"?<div className="grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
+        <section className="panel"><div className="mb-5 flex items-end justify-between"><div><div className="eyebrow">REFERENCE IMAGES</div><h2 className="section-title">Color look board</h2></div><span className="text-xs text-[#726d63]">{images.length}/12 loaded</span></div><div onClick={()=>inputRef.current?.click()} onDragOver={e=>e.preventDefault()} onDrop={e=>{e.preventDefault();addFiles(e.dataTransfer.files)}} className="dropzone"><input ref={inputRef} type="file" accept="image/jpeg,image/png" multiple className="hidden" onChange={e=>addFiles(e.target.files)}/><Upload className="mb-3 text-[#bd724b]" size={24}/><div className="text-sm text-[#d8d0c3]">이미지를 드래그하거나 클릭하여 업로드</div><div className="mt-2 text-xs text-[#77736b]">JPG / PNG · 필수 6–12장 · 업로드 후 순서 변경 가능</div><button type="button" onClick={e=>{e.stopPropagation();loadDemo()}} className="mt-4 text-[10px] tracking-[.18em] text-[#c88763] underline underline-offset-4">LOAD DEMO SET / 6 REFERENCES</button></div>{images.length>0&&<div className="mt-5 grid grid-cols-3 gap-3 sm:grid-cols-4">{images.map((im,i)=><div key={im.id} draggable onDragStart={e=>e.dataTransfer.setData("text/plain",String(i))} onDragOver={e=>e.preventDefault()} onDrop={e=>{const from=Number(e.dataTransfer.getData("text/plain"));const next=[...images];const [moved]=next.splice(from,1);next.splice(i,0,moved);setImages(next)}} className="group relative aspect-[4/3] overflow-hidden border border-white/10 bg-black"><img src={im.url} className={`h-full w-full ${fit==="crop"?"object-cover":"object-contain"}`} /><div className="absolute left-2 top-2 flex items-center gap-1 bg-black/70 px-1.5 py-1 text-[10px] text-[#d8d0c3]"><GripVertical size={11}/>{String(i+1).padStart(2,"0")}</div><button onClick={()=>setImages(images.filter(x=>x.id!==im.id))} className="absolute right-2 top-2 hidden rounded-full bg-black/70 p-1.5 text-[#e6a07c] group-hover:block"><X size={13}/></button></div>)}</div>}
+          <div className="mt-6 grid gap-4 sm:grid-cols-2"><label className="field-label">BOARD COUNT<select value={count} onChange={e=>setCount(Number(e.target.value))} className="field"><option value={6}>6 CUTS</option><option value={9}>9 CUTS</option><option value={12}>12 CUTS</option></select></label><label className="field-label">IMAGE FIT<select value={fit} onChange={e=>setFit(e.target.value)} className="field"><option value="crop">CROP — fill frame</option><option value="contain">ORIGINAL — preserve ratio</option></select></label></div><div className="mt-4 flex gap-3"><button className="primary-button flex-1" onClick={analyze} disabled={busy}>{busy?<span className="animate-pulse">ANALYZING…</span>:<><Sparkles size={15}/> ANALYZE COLOR</>}</button><button className="icon-button" title="Add more references" onClick={()=>inputRef.current?.click()}><ImagePlus size={16}/></button></div><div className="mt-6 flex items-end gap-2"><label className="field-label block flex-1">LOOK NAME<input value={lookName} onChange={e=>setLookName(e.target.value)} placeholder={analysis.mood!=="Awaiting analysis"?`${analysis.mood} / ${analysis.temperature}`:"Auto-generated after analysis"} className="field"/></label><button type="button" className="secondary-button mb-0.5 whitespace-nowrap" onClick={regenerateLookName}>REGENERATE</button></div></section>
+        <section className="space-y-6"><div className="panel"><div className="eyebrow">COLOR PROFILE</div><div className="mt-4 grid grid-cols-2 gap-2">{[["MOOD",analysis.mood],["EXPOSURE",analysis.exposure],["SATURATION",analysis.saturation],["CONTRAST",analysis.contrast],["TEMPERATURE",analysis.temperature],["COLOR BIAS",analysis.bias]].map(([k,v])=><div key={k} className="metric"><div className="metric-label">{k}</div><div className="mt-2 text-sm text-[#d7d0c3]">{v}</div></div>)}</div><div className="mt-6 border-t border-white/10 pt-5"><div className="metric-label mb-3">EXTRACTED PALETTE / 8 HEX</div><div className="grid grid-cols-4 gap-2">{Array.from({length:8}).map((_,i)=><div key={i}><div className="h-12 border border-white/10" style={{background:analysis.palette[i]||"#2a2925"}}></div><div className="mt-1 text-[10px] tracking-wider text-[#8e877b]">{analysis.palette[i]||"AUTO"}</div></div>)}</div></div></div><div className="panel preview-panel"><div className="mb-4 flex items-center justify-between"><div><div className="eyebrow">PREVIEW</div><div className="mt-1 text-lg font-serif text-[#e2d8ca]">{lookName||"Untitled Look Board"}</div></div><div className="text-[10px] tracking-[.2em] text-[#817a6e]">1600 × 900</div></div><div className="board-preview">{images.slice(0,count).map((im,i)=><img key={im.id} src={im.url} className={fit==="crop"?"object-cover":"object-contain"} style={{gridColumn:`span ${count===6?1:count===9?1:1}`}}/>)}{images.length===0&&<div className="absolute inset-0 flex items-center justify-center text-xs tracking-widest text-[#615c53]">UPLOAD REFERENCES TO PREVIEW</div>}</div><div className="mt-4 flex gap-3"><button className="primary-button flex-1" onClick={()=>{void createBoard(images,count,fit,lookName,analysis)}} disabled={!images.length}><Download size={15}/> EXPORT BOARD PNG</button><button className="secondary-button" onClick={()=>save("color")} disabled={!images.length}><Library size={15}/> SAVE</button></div></div></section>
+      </div>:<div className="grid gap-6 lg:grid-cols-[.92fr_1.08fr]"><section className="panel"><div className="eyebrow">CHARACTER INPUT</div><h2 className="section-title">Continuity profile</h2><div className="mt-6 grid gap-4 sm:grid-cols-2"><label className="field-label">OUTPUT PLATFORM<select value={platform} onChange={e=>setPlatform(e.target.value)} className="field"><option>Universal</option><option>GPT</option><option>Midjourney</option></select></label><label className="field-label">LOOK STRENGTH<select value={strength} onChange={e=>setStrength(e.target.value)} className="field"><option>Subtle</option><option>Strong</option><option>Heavy</option></select></label></div><label className="field-label mt-5 block">CHARACTER DESCRIPTION <span className="text-[#d6785b]">*</span><textarea value={fields.description} onChange={e=>setFields({...fields,description:e.target.value})} className="field min-h-28 resize-y" placeholder="얼굴 구조, 눈·코·입·턱, 헤어, 자세, 성격을 구체적으로 적어주세요."/></label><div className="mt-5 grid gap-4 sm:grid-cols-2">{[["period","PERIOD / COUNTRY","예: 1990s Seoul"],["role","ROLE / BACKGROUND","예: late-night radio producer"],["emotion","EMOTION / PERSONALITY","예: guarded but tender"],["body","BODY / POSTURE","예: lean, tired shoulders"],["wardrobe","WARDROBE DETAILS","예: worn wool coat, canvas shoes"]].map(([key,label,ph])=><label key={key} className="field-label">{label}<input value={fields[key as keyof typeof fields]} onChange={e=>setFields({...fields,[key]:e.target.value})} placeholder={ph} className="field"/></label>)}</div><div className="mt-6 border-t border-white/10 pt-5"><div className="metric-label mb-3">CONTINUITY LOCKS</div><div className="grid gap-2 sm:grid-cols-2">{optionLabels.map(k=><label key={k} className="flex items-center gap-3 text-xs text-[#aca59a]"><input type="checkbox" checked={checks[k]} onChange={e=>setChecks({...checks,[k]:e.target.checked})} className="accent-[#bd724b]"/>{optionText[k]}</label>)}</div></div></section><section className="panel"><div className="flex items-center justify-between"><div><div className="eyebrow">PROMPT OUTPUT</div><h2 className="section-title">Production language</h2></div><button className="secondary-button" onClick={copyPrompt}>{copied?<Check size={14}/>:<Copy size={14}/>} {copied?"COPIED":"COPY"}</button></div><div className="mt-6 flex border border-white/10 bg-[#0d0e0d]">{([["full","FULL PROMPT"],["compact","COMPACT"],["negative","NEGATIVE"]] as const).map(([key,label])=><button key={key} onClick={()=>setMode(key)} className={`flex-1 px-2 py-3 text-[10px] font-semibold tracking-widest ${mode===key?"bg-[#33241d] text-[#e6a174]":"text-[#77736b]"}`}>{label}</button>)}</div><pre className="prompt-box mt-4 whitespace-pre-wrap">{prompt[mode]}</pre><button className="primary-button mt-4 w-full" onClick={()=>save("character")} disabled={!fields.description}><Library size={15}/> SAVE CHARACTER SHEET</button></section></div>}
+      <section id="library" className="mt-10 border-t border-white/10 pt-8"><div className="mb-4 flex flex-wrap items-end justify-between gap-4"><div><div className="eyebrow">PRIVATE LIBRARY</div><h2 className="section-title">Saved sheets</h2></div><div className="flex items-center gap-2"><select value={libraryProjectFilter} onChange={e=>setLibraryProjectFilter(e.target.value)} className="field mt-0 w-auto text-xs"><option>ALL PROJECTS</option>{projects.map(project=><option key={project}>{project}</option>)}</select>{libraryProjectFilter!=="ALL PROJECTS"&&<button className="secondary-button" onClick={()=>{const next=deleteProjectItems(library,libraryProjectFilter);setLibrary(next);writeLibrary(localStorage,"visual-sheet-library",next);setLibraryProjectFilter("ALL PROJECTS")}}>DELETE PROJECT</button>}</div></div>{visibleLibrary.length===0?<div className="border border-dashed border-white/10 px-6 py-10 text-center text-sm text-[#6f6a62]">저장된 시트가 없습니다. 색감 시트 또는 캐릭터 시트를 저장하면 이곳에 표시됩니다.</div>:<div className="grid gap-3 md:grid-cols-3">{visibleLibrary.map(item=><div key={item.id} className="flex items-center justify-between border border-white/10 bg-[#141513] p-4"><div><div className="text-[10px] tracking-[.2em] text-[#bd724b]">{item.kind.toUpperCase()} SHEET</div><div className="mt-2 text-sm text-[#d9d2c6]">{item.title}</div><div className="mt-1 text-xs text-[#77736b]">{item.project || "Untitled Project"} · {item.detail} · {new Date(item.createdAt).toLocaleDateString()}</div></div><button className="text-[#6f6a62] hover:text-[#d47f60]" onClick={()=>{const next=library.filter(x=>x.id!==item.id);setLibrary(next);writeLibrary(localStorage,"visual-sheet-library",next)}}><Trash2 size={15}/></button></div>)}</div>}</section>
+    </main><footer className="border-t border-white/10 px-6 py-8 text-center text-[10px] tracking-[.28em] text-[#625e56]">VISUAL SHEET LAB · PRIVATE WORKSPACE · COLOR / LIGHT / TEXTURE / CONTINUITY</footer>
+  </div>
 }
