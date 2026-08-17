@@ -39,3 +39,19 @@ export function writeLibrary<T>(storage: { setItem: (key: string, value: string)
   storage.setItem(key, JSON.stringify(items));
   return items;
 }
+
+export type BenchmarkFilterEntry = { analysis: { mood: string; bias: string } };
+
+export function benchmarkFilterOptions<T extends BenchmarkFilterEntry>(entries: T[]) {
+  return {
+    moods: Array.from(new Set(entries.map(entry => entry.analysis.mood))).sort(),
+    biases: Array.from(new Set(entries.map(entry => entry.analysis.bias))).sort(),
+  };
+}
+
+export function filterBenchmarkEntries<T extends BenchmarkFilterEntry>(entries: T[], mood: string, bias: string) {
+  return entries.filter(entry =>
+    (mood === "ALL MOODS" || entry.analysis.mood === mood) &&
+    (bias === "ALL COLOR BIAS" || entry.analysis.bias === bias),
+  );
+}
