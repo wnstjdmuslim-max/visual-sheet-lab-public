@@ -1,6 +1,6 @@
-import { eq } from "drizzle-orm";
+import { desc, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { FilmGrabBenchmark, InsertFilmGrabBenchmark, InsertUser, filmGrabBenchmarks, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,30 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+export async function listFilmGrabBenchmarks(): Promise<FilmGrabBenchmark[]> {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(filmGrabBenchmarks).orderBy(desc(filmGrabBenchmarks.filmTitle));
+}
+
+export async function upsertFilmGrabBenchmark(item: InsertFilmGrabBenchmark): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database is not available");
+  await db.insert(filmGrabBenchmarks).values(item).onDuplicateKeyUpdate({
+    set: {
+      filmTitle: item.filmTitle,
+      imageUrls: item.imageUrls,
+      palette: item.palette,
+      analysis: item.analysis,
+      sourceUpdatedAt: item.sourceUpdatedAt,
+      updatedAt: new Date(),
+    },
+  });
+}
+
+export async function countFilmGrabBenchmarks(): Promise<number> {
+  const db = await getDb();
+  if (!db) return 0;
+  const rows = await db.select({ id: filmGrabBenchmarks.id }).from(filmGrabBenchmarks);
+  return rows.length;
+}

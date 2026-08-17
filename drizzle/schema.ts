@@ -25,4 +25,17 @@ export const users = mysqlTable("users", {
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 
-// TODO: Add your tables here
+export const filmGrabBenchmarks = mysqlTable("filmGrabBenchmarks", {
+  id: int("id").autoincrement().primaryKey(),
+  filmTitle: varchar("filmTitle", { length: 255 }).notNull(),
+  sourcePage: varchar("sourcePage", { length: 512 }).notNull().unique(),
+  imageUrls: text("imageUrls").notNull(),
+  palette: text("palette").notNull(),
+  analysis: text("analysis").notNull(),
+  sourceUpdatedAt: timestamp("sourceUpdatedAt"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type FilmGrabBenchmark = typeof filmGrabBenchmarks.$inferSelect;
+export type InsertFilmGrabBenchmark = typeof filmGrabBenchmarks.$inferInsert;

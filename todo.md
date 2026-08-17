@@ -45,3 +45,24 @@
 - [x] 라이브러리 저장·삭제의 localStorage 반영과 canvas PNG 다운로드를 테스트
 
 - [x] 프로젝트 삭제 결과가 localStorage에도 반영되는지 테스트
+
+## Audit and data-foundation review
+
+- [x] 현재 색감 분석·캐릭터 프롬프트·룩 보드 결과 생성 로직을 코드 기준으로 문서화
+- [x] 참고 사이트에서 실제 입력 이미지와 결과값을 수집했는지 여부 확인
+- [x] 현재 입력 사례의 종류·장수·저장 위치 확인
+- [x] 참고 결과 데이터셋을 계속 누적할 수 있는 저장 구조와 필요한 변경사항 설계
+
+## Film Grab benchmark sync implementation
+
+- [x] Film Grab 기준 데이터 테이블과 마이그레이션 추가
+- [x] 10개 영화×9장 이미지 URL과 색감 분석 결과를 DB에 적재
+- [x] 기준 데이터 조회 tRPC 절차와 Visual Sheet Lab 동기화 UI 추가
+- [x] DB 적재 수량·중복 방지·조회 결과 검증
+
+## True Film Grab sync
+
+- [x] Film Grab 기준 스냅샷을 서버 동기화 데이터로 등록
+- [x] DB UPSERT를 실행하는 filmGrab.sync mutation 추가
+- [x] SYNC 버튼을 실제 UPSERT 후 목록 재조회 흐름으로 연결
+- [x] 동기화 성공·실패 상태와 적재 수량 표시
