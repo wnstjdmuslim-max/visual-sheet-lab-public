@@ -15,6 +15,13 @@
       "when": 1786979013235,
       "tag": "0001_daffy_wiccan",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1786986178482,
+      "tag": "0002_mute_thaddeus_ross",
+      "breakpoints": true
     }
   ]
 }

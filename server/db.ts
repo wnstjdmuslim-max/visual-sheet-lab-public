@@ -1,6 +1,6 @@
 import { desc, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { FilmGrabBenchmark, InsertFilmGrabBenchmark, InsertUser, filmGrabBenchmarks, users } from "../drizzle/schema";
+import { CharacterPromptBenchmark, FilmGrabBenchmark, InsertCharacterPromptBenchmark, InsertFilmGrabBenchmark, InsertUser, characterPromptBenchmarks, filmGrabBenchmarks, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -115,4 +115,25 @@ export async function countFilmGrabBenchmarks(): Promise<number> {
   if (!db) return 0;
   const rows = await db.select({ id: filmGrabBenchmarks.id }).from(filmGrabBenchmarks);
   return rows.length;
+}
+
+export async function listCharacterPromptBenchmarks(): Promise<CharacterPromptBenchmark[]> {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(characterPromptBenchmarks).orderBy(desc(characterPromptBenchmarks.caseName));
+}
+
+export async function upsertCharacterPromptBenchmark(item: InsertCharacterPromptBenchmark): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database is not available");
+  await db.insert(characterPromptBenchmarks).values(item).onDuplicateKeyUpdate({
+    set: {
+      platform: item.platform,
+      strength: item.strength,
+      inputFields: item.inputFields,
+      outputPrompts: item.outputPrompts,
+      sourceLabel: item.sourceLabel,
+      updatedAt: new Date(),
+    },
+  });
 }

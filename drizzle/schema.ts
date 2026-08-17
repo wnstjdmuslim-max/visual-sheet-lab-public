@@ -39,3 +39,18 @@ export const filmGrabBenchmarks = mysqlTable("filmGrabBenchmarks", {
 
 export type FilmGrabBenchmark = typeof filmGrabBenchmarks.$inferSelect;
 export type InsertFilmGrabBenchmark = typeof filmGrabBenchmarks.$inferInsert;
+
+export const characterPromptBenchmarks = mysqlTable("characterPromptBenchmarks", {
+  id: int("id").autoincrement().primaryKey(),
+  caseName: varchar("caseName", { length: 128 }).notNull().unique(),
+  platform: varchar("platform", { length: 64 }).notNull(),
+  strength: varchar("strength", { length: 64 }).notNull(),
+  inputFields: text("inputFields").notNull(),
+  outputPrompts: text("outputPrompts").notNull(),
+  sourceLabel: varchar("sourceLabel", { length: 255 }).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type CharacterPromptBenchmark = typeof characterPromptBenchmarks.$inferSelect;
+export type InsertCharacterPromptBenchmark = typeof characterPromptBenchmarks.$inferInsert;

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { isSupportedImageType, makeLookName, validateReferenceCount } from "../shared/sheetValidation";
-import { buildCharacterPrompt, deleteProjectItems, filterLibraryByProject, makeBoardFilename, readLibrary, triggerPngDownload, writeLibrary } from "../shared/sheetRules";
+import { buildCharacterPrompt, deleteProjectItems, filterLibraryByProject, makeBoardFilename, makeSavedSheetRecord, readLibrary, triggerPngDownload, writeLibrary } from "../shared/sheetRules";
 
 describe("Visual Sheet Lab output contract", () => {
   it("validates the 6-to-12 reference image range and formats", () => {
@@ -52,6 +52,12 @@ describe("Visual Sheet Lab output contract", () => {
     const afterDelete = deleteProjectItems(items, "Film A");
     writeLibrary(storage, "library", afterDelete);
     expect(readLibrary<typeof items[number]>(storage, "library")).toEqual([]);
+  });
+
+  it("creates a character library record after save", () => {
+    expect(makeSavedSheetRecord("character", "A Korean grandfather", "Family short", "Universal", "id-1", "2026-08-18T00:00:00.000Z")).toEqual({
+      id: "id-1", kind: "character", title: "A Korean grandfather", project: "Family short", detail: "Universal", createdAt: "2026-08-18T00:00:00.000Z",
+    });
   });
 
   it("keeps the required UI labels", () => {

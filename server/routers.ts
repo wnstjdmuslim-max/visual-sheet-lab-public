@@ -2,7 +2,8 @@ import { COOKIE_NAME } from "@shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
-import { countFilmGrabBenchmarks, listFilmGrabBenchmarks, upsertFilmGrabBenchmark } from "./db";
+import { countFilmGrabBenchmarks, listCharacterPromptBenchmarks, listFilmGrabBenchmarks, upsertCharacterPromptBenchmark, upsertFilmGrabBenchmark } from "./db";
+import { characterPromptSeed } from "./characterPromptSeed";
 import { filmGrabSeed } from "./filmGrabSeed";
 
 export const appRouter = router({
@@ -22,6 +23,22 @@ export const appRouter = router({
         });
       }
       return { synced: filmGrabSeed.length } as const;
+    }),
+  }),
+  characterPrompts: router({
+    list: publicProcedure.query(() => listCharacterPromptBenchmarks()),
+    sync: publicProcedure.mutation(async () => {
+      for (const item of characterPromptSeed) {
+        await upsertCharacterPromptBenchmark({
+          caseName: item.caseName,
+          platform: item.platform,
+          strength: item.strength,
+          inputFields: JSON.stringify({ fields: item.fields, locks: item.locks }),
+          outputPrompts: JSON.stringify(item.outputs),
+          sourceLabel: item.sourceLabel,
+        });
+      }
+      return { synced: characterPromptSeed.length } as const;
     }),
   }),
   auth: router({

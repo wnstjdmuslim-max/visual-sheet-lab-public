@@ -108,3 +108,32 @@
 - [x] 즐겨찾기 localStorage 저장·복원과 FAVORITES 모드 필터링 순수 함수 테스트 추가
 - [x] FAVORITES empty-state와 MOOD·COLOR BIAS 조합 상태 검증
 - [x] 데스크톱·모바일 즐겨찾기 하트와 모아보기 렌더링 검증
+
+## Character prompt benchmark rebuild
+
+- [x] 첨부된 Universal Strong / Subtle / Heavy 결과의 공통 구조와 차이 분석
+- [x] 얼굴·자세·의상·상호작용·보드 구역·현실성 보호 규칙 추출
+- [x] 대표 캐릭터 입력 테스트 케이스와 기대 출력 3종 구성
+- [x] 캐릭터 프롬프트 규칙·테스트 입력·기대 출력 DB 저장 구조 추가
+- [x] Universal / GPT / Midjourney 및 Subtle / Strong / Heavy 로직 반영
+- [x] FULL PROMPT / COMPACT / NEGATIVE 출력 연결
+- [x] 첨부 기준 출력과 현재 결과 비교 테스트
+- [x] 캐릭터 시트 화면·저장 라이브러리·반응형 검증
+
+## Character benchmark evidence refinements
+
+- [x] GPT와 Midjourney 전용 프롬프트 규칙과 출력 테스트 추가
+- [x] 첨부 Strong·Subtle·Heavy 결과의 핵심 문구·구조를 직접 비교하는 기준 테스트 추가
+- [x] 캐릭터 시트 저장·라이브러리 반영과 모바일·태블릿 렌더링 검증
+
+## Final character evidence
+
+- [x] 첨부 3개 원문에서 추출한 FULL PROMPT 핵심 섹션·문구를 snapshot 기준으로 저장하고 비교
+- [x] 캐릭터 입력 후 SAVE CHARACTER SHEET과 라이브러리 항목 생성 흐름 검증
+- [x] 태블릿 캐릭터 시트 레이아웃과 저장 후 라이브러리 표시 검증
+
+## Character verification completion
+
+- [x] 첨부 결과와 직접 대조 가능한 Strong·Subtle·Heavy snapshot fixture 추가
+- [x] 캐릭터 저장 결과를 재현하는 순수 저장 결과 테스트 추가
+- [x] 저장된 캐릭터 시트가 보이는 모바일·태블릿 상태 캡처 추가
