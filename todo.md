@@ -137,3 +137,8 @@
 - [x] 첨부 결과와 직접 대조 가능한 Strong·Subtle·Heavy snapshot fixture 추가
 - [x] 캐릭터 저장 결과를 재현하는 순수 저장 결과 테스트 추가
 - [x] 저장된 캐릭터 시트가 보이는 모바일·태블릿 상태 캡처 추가
+
+## Publishing request
+
+- [x] 퍼블리시 전 상태 점검 및 최신 체크포인트 저장
+- [ ] 관리 화면의 Publish 버튼으로 공개 배포 안내
