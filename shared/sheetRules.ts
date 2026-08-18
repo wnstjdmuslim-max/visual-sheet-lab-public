@@ -109,3 +109,40 @@ export type SavedSheetRecord = {
 export function makeSavedSheetRecord(kind: "color" | "character", title: string, project: string, detail: string, id: string, createdAt: string): SavedSheetRecord {
   return { id, kind, title: title.trim() || (kind === "character" ? "Untitled Character" : "Untitled Look"), project: project.trim() || "Untitled Project", createdAt, detail };
 }
+
+
+export type ImageComparisonRecord = {
+  id: string;
+  project: string;
+  generatedName: string;
+  benchmarkTitle: string;
+  score: number;
+  createdAt: string;
+  thumbnail: string;
+};
+
+function hexToRgb(hex: string) {
+  const normalized = hex.replace("#", "");
+  return [0, 2, 4].map(index => Number.parseInt(normalized.slice(index, index + 2), 16) || 0);
+}
+
+export function comparePaletteDistance(left: string[], right: string[]) {
+  if (!left.length || !right.length) return { distance: 1, score: 0 };
+  const count = Math.min(left.length, right.length);
+  let total = 0;
+  for (let index = 0; index < count; index += 1) {
+    const a = hexToRgb(left[index]);
+    const b = hexToRgb(right[index]);
+    total += Math.sqrt(a.reduce((sum, value, channel) => sum + (value - b[channel]) ** 2, 0)) / 441.67295593;
+  }
+  const distance = total / count;
+  return { distance, score: Math.max(0, Math.round((1 - distance) * 100)) };
+}
+
+export function triggerCharacterPdfPrint(title: string, prompt: string, windowLike: { open: (url?: string, target?: string, features?: string) => Window | null }) {
+  const popup = windowLike.open("", "_blank", "width=960,height=720");
+  if (!popup) return false;
+  popup.document.write(`<!doctype html><html><head><title>${title}</title><style>body{font-family:Arial,sans-serif;padding:40px;color:#171717}h1{font-size:24px}pre{white-space:pre-wrap;line-height:1.55;font-size:12px}</style></head><body><h1>${title}</h1><pre>${prompt.replace(/&/g,"&amp;").replace(/</g,"&lt;")}</pre><script>window.onload=()=>window.print();</script></body></html>`);
+  popup.document.close();
+  return true;
+}
