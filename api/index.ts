@@ -4,7 +4,6 @@ import { appRouter } from "../server/routers";
 import { createContext } from "../server/_core/context";
 import { registerOAuthRoutes } from "../server/_core/oauth";
 import { registerStorageProxy } from "../server/_core/storageProxy";
-import { serveStatic } from "../server/_core/vite";
 import { sdk } from "../server/_core/sdk";
 
 const app = express();
@@ -23,6 +22,5 @@ app.post("/api/scheduled/filmGrabSync", async (req, res) => {
   }
 });
 app.use("/api/trpc", createExpressMiddleware({ router: appRouter, createContext }));
-serveStatic(app);
 
 export default app;

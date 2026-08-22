@@ -180,3 +180,9 @@
 - [x] GitHub `visual-sheet-lab-public` 저장소를 Public으로 전환
 - [x] 공개 저장소를 Vercel 프로젝트로 연결
 - [x] Vercel 배포 성공 및 비로그인 접속 확인
+
+
+## Vercel public API fix
+
+- [ ] Vercel API 초기화 오류 수정 및 Film Grab fallback 재검증
+- [ ] 최신 코드 재배포 후 공개 URL의 benchmark 응답 확인
