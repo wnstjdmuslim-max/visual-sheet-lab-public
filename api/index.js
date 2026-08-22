@@ -3,8 +3,20 @@ const characters = [{"id":1,"caseName":"attached-universal-strong","platform":"U
 
 function envelope(data) { return [{ result: { data: { json: data } } }]; }
 function send(res, status, body) { res.statusCode = status; res.setHeader("content-type", "application/json; charset=utf-8"); res.setHeader("access-control-allow-origin", "*"); res.end(JSON.stringify(body)); }
-export default function handler(req, res) {
+export default async function handler(req, res) {
   const path = String(req.url || "").split("?")[0];
+  if (path === "/api/cron/film-grab") {
+    try {
+      const response = await fetch("https://film-grab.com/", { headers: { "user-agent": "Visual-Sheet-Lab-Cron/1.0" } });
+      const html = await response.text();
+      const discoveredPages = [...new Set([...html.matchAll(/href=["'](https:\/\/film-grab\.com\/\d{4}\/[^"']+)["']/gi)].map((match) => match[1]))].slice(0, 20);
+      const result = { ok: response.ok, checkedAt: new Date().toISOString(), sourceStatus: response.status, source: "film-grab.com", discoveredCount: discoveredPages.length, discoveredPages, note: "Public Vercel deployment uses a static benchmark fallback; discovered pages are logged for the next data refresh." };
+      console.log(JSON.stringify({ event: "film-grab-sync", ...result }));
+      return send(res, response.ok ? 200 : 502, result);
+    } catch (error) {
+      return send(res, 502, { ok: false, checkedAt: new Date().toISOString(), error: error instanceof Error ? error.message : String(error), source: "film-grab.com" });
+    }
+  }
   const procedures = path.split("/api/trpc/")[1] || "";
   const names = procedures.split(",").filter(Boolean);
   const result = names.map((name) => {

@@ -184,5 +184,5 @@
 
 ## Vercel public API fix
 
-- [ ] Vercel API 초기화 오류 수정 및 Film Grab fallback 재검증
-- [ ] 최신 코드 재배포 후 공개 URL의 benchmark 응답 확인
+- [x] Vercel API 초기화 오류 수정 및 Film Grab fallback 재검증
+- [x] 최신 코드 재배포 후 공개 URL의 benchmark 응답 확인
