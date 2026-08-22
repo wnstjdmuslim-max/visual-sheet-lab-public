@@ -157,13 +157,26 @@
 
 ## External deployment request
 
-- [ ] 외부 배포용 환경 변수와 Manus OAuth 의존성 점검
-- [ ] GitHub 공개 저장소 또는 사용자 지정 저장소로 코드 내보내기
-- [ ] Vercel 배포 설정 및 외부 사용자 접근 확인
+- [x] 외부 배포용 환경 변수와 Manus OAuth 의존성 점검
+- [x] GitHub 공개 저장소 또는 사용자 지정 저장소로 코드 내보내기
+- [x] Vercel 배포 설정 및 외부 사용자 접근 확인
 - [ ] 외부 배포 환경에서 Film Grab 자동 동기화 구성 확인
 
 
 ## External access authorization
 
-- [ ] 연결된 GitHub/Vercel 브라우저 세션 또는 관리 화면 권한 확인
-- [ ] Manus 로그인 없이 접근 가능한 공개 배포 방식 결정 및 적용
+- [x] 연결된 GitHub/Vercel 브라우저 세션 또는 관리 화면 권한 확인
+- [x] Manus 로그인 없이 접근 가능한 공개 배포 방식 결정 및 적용
+
+
+## Browser-assisted export
+
+- [x] GitHub 설정 화면에서 코드 내보내기 또는 GitHub App 권한 연결 확인
+- [x] Vercel에 공개 저장소 연결 후 배포 검증
+
+
+## Public deployment execution
+
+- [x] GitHub `visual-sheet-lab-public` 저장소를 Public으로 전환
+- [x] 공개 저장소를 Vercel 프로젝트로 연결
+- [x] Vercel 배포 성공 및 비로그인 접속 확인
