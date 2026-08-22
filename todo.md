@@ -153,3 +153,17 @@
 - [ ] Film Grab 자동 동기화 주기 작업과 실행 로그 구현
 - [x] 새 기능 Vitest 테스트와 반응형 화면 검증
 - [x] 호스팅·구독·장기 운영 안내를 최종 결과에 포함
+
+
+## External deployment request
+
+- [ ] 외부 배포용 환경 변수와 Manus OAuth 의존성 점검
+- [ ] GitHub 공개 저장소 또는 사용자 지정 저장소로 코드 내보내기
+- [ ] Vercel 배포 설정 및 외부 사용자 접근 확인
+- [ ] 외부 배포 환경에서 Film Grab 자동 동기화 구성 확인
+
+
+## External access authorization
+
+- [ ] 연결된 GitHub/Vercel 브라우저 세션 또는 관리 화면 권한 확인
+- [ ] Manus 로그인 없이 접근 가능한 공개 배포 방식 결정 및 적용
