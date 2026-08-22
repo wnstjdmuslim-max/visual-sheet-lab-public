@@ -92,7 +92,12 @@ export async function getUserByOpenId(openId: string) {
 export async function listFilmGrabBenchmarks(): Promise<FilmGrabBenchmark[]> {
   const db = await getDb();
   if (!db) return [];
-  return db.select().from(filmGrabBenchmarks).orderBy(desc(filmGrabBenchmarks.filmTitle));
+  try {
+    return await db.select().from(filmGrabBenchmarks).orderBy(desc(filmGrabBenchmarks.filmTitle));
+  } catch (error) {
+    console.warn("[Database] Film Grab list unavailable:", error);
+    return [];
+  }
 }
 
 export async function upsertFilmGrabBenchmark(item: InsertFilmGrabBenchmark): Promise<void> {
@@ -113,14 +118,24 @@ export async function upsertFilmGrabBenchmark(item: InsertFilmGrabBenchmark): Pr
 export async function countFilmGrabBenchmarks(): Promise<number> {
   const db = await getDb();
   if (!db) return 0;
-  const rows = await db.select({ id: filmGrabBenchmarks.id }).from(filmGrabBenchmarks);
-  return rows.length;
+  try {
+    const rows = await db.select({ id: filmGrabBenchmarks.id }).from(filmGrabBenchmarks);
+    return rows.length;
+  } catch (error) {
+    console.warn("[Database] Film Grab count unavailable:", error);
+    return 0;
+  }
 }
 
 export async function listCharacterPromptBenchmarks(): Promise<CharacterPromptBenchmark[]> {
   const db = await getDb();
   if (!db) return [];
-  return db.select().from(characterPromptBenchmarks).orderBy(desc(characterPromptBenchmarks.caseName));
+  try {
+    return await db.select().from(characterPromptBenchmarks).orderBy(desc(characterPromptBenchmarks.caseName));
+  } catch (error) {
+    console.warn("[Database] Character benchmark list unavailable:", error);
+    return [];
+  }
 }
 
 export async function upsertCharacterPromptBenchmark(item: InsertCharacterPromptBenchmark): Promise<void> {
